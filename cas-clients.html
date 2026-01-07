@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cas Clients - AudienceFlow</title>
+  <meta name="description" content="Découvrez comment AudienceFlow transforme les followers LinkedIn en clients pour des organismes de formation, coachs et entreprises B2B." />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Cas Clients AudienceFlow" />
+  <meta property="og:description" content="Exemples concrets de conversion de followers LinkedIn en clients." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://ton-domaine/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Tailwind 2.x -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- Font Awesome 6.x -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    .gradient-card { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+    .gradient-process { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+    .gradient-step { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+    .shadow-custom { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-5px); }
+    :target { scroll-margin-top: 96px; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Skip link -->
+  <a href="#contenu" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-white text-gray-900 px-3 py-2 rounded">
+    Aller au contenu
+  </a>
+
+  <!-- HEADER (identique à index.html avec lien Cas Clients) -->
+  <header id="site-header" class="fixed top-0 inset-x-0 z-40 transition-all">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="h-16 flex items-center justify-between rounded-xl mt-3 px-4 bg-white bg-opacity-70 backdrop-filter backdrop-blur-lg shadow">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2" aria-label="Accueil">
+          <span class="w-8 h-8 rounded-lg gradient-bg block"></span>
+          <span class="font-semibold text-gray-900">AudienceFlow</span>
+        </a>
+
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="index.html#situation" class="text-gray-700 hover:text-gray-900">Situation</a>
+          <a href="index.html#process" class="text-gray-700 hover:text-gray-900">Process</a>
+          <a href="index.html#benefices" class="text-gray-700 hover:text-gray-900">Bénéfices</a>
+          <a href="index.html#contact" class="text-gray-700 hover:text-gray-900">Contact</a>
+          <a href="cas-clients.html" class="text-gray-900 font-semibold border-b-2 border-gray-900">Cas Clients</a>
+          <a href="https://tidycal.com/mathieu-growth/autolinkedin" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 bg-gray-900 text-white px-4 py-2 rounded-lg shadow hover:opacity-90">
+            <i class="fa-regular fa-calendar"></i> 15 min
+          </a>
+        </nav>
+
+        <!-- Mobile menu button -->
+        <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <nav id="mobile-menu" class="md:hidden hidden mt-2 bg-white bg-opacity-90 backdrop-filter backdrop-blur-lg rounded-xl shadow px-4 py-3">
+        <a href="index.html#situation" class="block py-2 text-gray-800">Situation</a>
+        <a href="index.html#process" class="block py-2 text-gray-800">Process</a>
+        <a href="index.html#benefices" class="block py-2 text-gray-800">Bénéfices</a>
+        <a href="index.html#contact" class="block py-2 text-gray-800">Contact</a>
+        <a href="cas-clients.html" class="block py-2 text-gray-900 font-semibold">Cas Clients</a>
+        <a href="https://tidycal.com/mathieu-growth/autolinkedin" target="_blank" rel="noopener" class="mt-2 w-full text-center bg-gray-900 text-white px-4 py-2 rounded-lg">
+          Prendre 15 min
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO CAS CLIENTS -->
+  <section id="contenu" class="gradient-bg min-h-[60vh] flex items-center justify-center px-4 py-20 pt-32">
+    <div class="max-w-4xl mx-auto text-center text-white">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        Cas clients : comment vos followers LinkedIn deviennent des clients
+      </h1>
+      <p class="text-lg md:text-xl text-blue-100 mb-6">
+        Quelques exemples concrets de systèmes déployés avec AudienceFlow pour des organismes de formation, coachs et entreprises B2B.
+      </p>
+      <p class="text-sm text-blue-100/80">
+        Données anonymisées ou publiées avec accord des clients.  
+      </p>
+    </div>
+  </section>
+
+  <!-- LISTE CAS CLIENTS -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-4">Exemples de résultats obtenus</h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto mb-12"></div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Cas client 1 -->
+        <article class="bg-white rounded-2xl p-8 shadow-custom card-hover border border-gray-100">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900">Organisme de formation B2B</h3>
+              <p class="text-sm text-gray-500">Page LinkedIn ~7 500 followers</p>
+            </div>
+            <span class="inline-flex items-center px-3 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">
+              +18% taux de réponse
+            </span>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Mise en place d’un process complet « followers → rendez-vous » pour une offre de formation managériale à destination des cadres.
+          </p>
+          <ul class="space-y-2 text-sm text-gray-700 mb-4">
+            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Extraction & enrichissement de 100% des followers</li>
+            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Séquence de messages personnalisée (LinkedIn + email)</li>
+            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Qualification automatique des réponses (intéressé / plus tard / pas le bon contact)</li>
+          </ul>
+          <div class="bg-green-50 border border-green-100 rounded-xl p-4 text-sm">
+            <p class="font-semibold text-green-800 mb-1">Impact (3 mois)</p>
+            <p class="text-green-900">
+              146 conversations engagées · 32 rendez-vous pris · 9 nouveaux clients signés.
+            </p>
+          </div>
+        </article>
+
+        <!-- Cas client 2 -->
+        <article class="bg-white rounded-2xl p-8 shadow-custom card-hover border border-gray-100">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900">Coach indépendant / infopreneur</h3>
+              <p class="text-sm text-gray-500">Page LinkedIn ~3 200 followers</p>
+            </div>
+            <span class="inline-flex items-center px-3 py-1 text-xs font-semibold rounded-full bg-blue-100 text-blue-800">
+              +1 cohorte / mois
+            </span>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Objectif : remplir les cohortes d’un programme de coaching premium (ticket > 2 000 €) en utilisant uniquement l’audience existante.
+          </p>
+          <ul class="space-y-2 text-sm text-gray-700 mb-4">
+            <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Mapping complet des followers avec scoring d’intérêt</li>
+            <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Messages d’invitation orientés diagnostic plutôt que “vente directe”</li>
+            <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Calendrier de rendez-vous auto-synchronisé avec les réponses</li>
+          </ul>
+          <div class="bg-blue-50 border border-blue-100 rounded-xl p-4 text-sm">
+            <p class="font-semibold text-blue-800 mb-1">Impact (2 cohortes)</p>
+            <p class="text-blue-900">
+              Cohortes remplies à 100% uniquement via followers · pipeline mieux qualifié · hausse du taux de closing.
+            </p>
+          </div>
+        </article>
+
+        <!-- Cas client 3 -->
+        <article class="bg-white rounded-2xl p-8 shadow-custom card-hover border border-gray-100">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900">Événement / conférence</h3>
+              <p class="text-sm text-gray-500">Page LinkedIn ~12 000 followers</p>
+            </div>
+            <span class="inline-flex items-center px-3 py-1 text-xs font-semibold rounded-full bg-purple-100 text-purple-800">
+              +30% inscriptions
+            </span>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Objectif : augmenter le nombre d’inscrits à un événement annuel payant en activant les followers existants de la page.
+          </p>
+          <ul class="space-y-2 text-sm text-gray-700 mb-4">
+            <li><i class="fa-solid fa-check text-purple-500 mr-2"></i> Détection des personae clés (DRH, dirigeants, responsables formation)</li>
+            <li><i class="fa-solid fa-check text-purple-500 mr-2"></i> Message centré sur la valeur de l’événement, pas sur la promo</li>
+            <li><i class="fa-solid fa-check text-purple-500 mr-2"></i> Relances intelligentes uniquement sur les répondants “intéressés”</li>
+          </ul>
+          <div class="bg-purple-50 border border-purple-100 rounded-xl p-4 text-sm">
+            <p class="font-semibold text-purple-800 mb-1">Impact (1 édition)</p>
+            <p class="text-purple-900">
+              +30% d’inscriptions issues directement des followers · meilleure visibilité sur les segments qui convertissent.
+            </p>
+          </div>
+        </article>
+
+        <!-- Cas client 4 (placeholder pour futur client officiel type Adetem) -->
+        <article class="gradient-card rounded-2xl p-8 shadow-custom text-white">
+          <h3 class="text-xl font-bold mb-2">Vous, prochain cas client ?</h3>
+          <p class="text-sm mb-4 text-white/90">
+            Vous avez une page LinkedIn avec au moins 1 000 followers et une offre claire (formation, coaching, B2B) ?
+          </p>
+          <ul class="space-y-2 text-sm mb-4">
+            <li><i class="fa-solid fa-arrow-right mr-2"></i> On audite votre page et votre audience</li>
+            <li><i class="fa-solid fa-arrow-right mr-2"></i> On dessine ensemble le process “followers → clients”</li>
+            <li><i class="fa-solid fa-arrow-right mr-2"></i> On déploie le système et vous ne gérez que les réponses</li>
+          </ul>
+          <a href="https://tidycal.com/mathieu-growth/autolinkedin" target="_blank" rel="noopener"
+             class="inline-flex items-center justify-center mt-2 bg-white text-gray-900 font-semibold px-5 py-2.5 rounded-xl shadow">
+            Discuter de votre cas en 15 min
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA DE FIN (reprise du style de ta page principale) -->
+  <section class="gradient-bg py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+        Envie de devenir le prochain cas client AudienceFlow ?
+      </h2>
+      <p class="text-lg text-blue-100 mb-8">
+        On part de votre page LinkedIn actuelle, de votre offre, et on construit un système qui convertit vos followers en clients.
+      </p>
+      <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-2xl p-8 max-w-2xl mx-auto">
+        <h3 class="text-2xl font-bold text-white mb-4">Audit express offert (15 min)</h3>
+        <p class="text-blue-100 mb-6">
+          Vous repartez avec une vision claire de ce que votre audience peut générer en chiffre d’affaires.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://tidycal.com/mathieu-growth/autolinkedin" target="_blank" rel="noopener"
+             class="inline-flex items-center justify-center bg-yellow-300 text-gray-900 font-semibold px-6 py-3 rounded-xl shadow">
+            Réserver 15 min
+          </a>
+          <a href="https://www.linkedin.com/in/mathieu-lambert-growth/" target="_blank" rel="noopener"
+             class="flex items-center justify-center text-white hover:underline" aria-label="Voir le profil LinkedIn de Mathieu Lambert">
+            <img src="./mathieu-picture.jpeg"
+              alt="Mathieu Lambert"
+              class="w-10 h-10 rounded-full mr-3 border-2 border-white shadow" />
+            <i class="fab fa-linkedin mr-2 text-2xl" aria-hidden="true"></i>
+            <span class="font-medium">Spécialiste Growth Hacking LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Menu mobile toggle
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn && btn.addEventListener('click', () => {
+      const isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', isHidden ? 'false' : 'true');
+    });
+
+    // Header style on scroll
+    const hdr = document.getElementById('site-header');
+    const onScroll = () => {
+      const y = window.scrollY || 0;
+      hdr.style.boxShadow = y > 8 ? '0 10px 30px rgba(0,0,0,.08)' : 'none';
+      hdr.style.background = y > 8 ? 'rgba(255,255,255,.6)' : 'transparent';
+      hdr.style.backdropFilter = y > 8 ? 'saturate(180%) blur(8px)' : 'none';
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  </script>
+</body>
+</html>
