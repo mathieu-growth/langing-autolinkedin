@@ -111,37 +111,48 @@
         </div>
 
         <!-- KPI Card -->
-        <div class="w-full lg:w-[420px] bg-white rounded-3xl p-6 shadow-custom">
+        <div class="w-full lg:w-[420px] bg-white bg-opacity-15 backdrop-filter backdrop-blur-lg rounded-3xl p-6 shadow-custom border border-white border-opacity-20">
         <div class="flex items-center justify-between">
-            <div class="text-sm font-semibold text-gray-900">
-            Résultats (1er mois)
-            </div>
-            <div class="text-xs text-gray-500">
-            Observés
-            </div>
+            <div class="text-sm font-semibold text-white">Résultats (1er mois)</div>
+            <div class="text-xs text-white text-opacity-80">Observés</div>
         </div>
 
         <div class="mt-5 grid grid-cols-1 gap-3">
             <!-- KPI 1 -->
-            <div class="bg-white bg-opacity-90 border-l-4 border-indigo-500 rounded-2xl p-4 shadow-sm">
-            <div class="text-sm text-gray-500">Prises de contact</div>
-            <div class="text-3xl font-extrabold text-gray-900 mt-1">445</div>
-            <div class="text-xs text-gray-500 mt-1">~100 / semaine</div>
+            <div class="rounded-2xl p-4 bg-white bg-opacity-90 shadow-sm border border-white border-opacity-40">
+            <div class="flex items-start justify-between">
+                <div>
+                <div class="text-sm text-gray-500">Prises de contact</div>
+                <div class="text-3xl font-extrabold text-gray-900 mt-1">445</div>
+                <div class="text-xs text-gray-500 mt-1">~100 / semaine</div>
+                </div>
+                <span class="w-2.5 h-10 rounded-full bg-indigo-500"></span>
+            </div>
             </div>
 
             <div class="grid grid-cols-2 gap-3">
             <!-- KPI 2 -->
-            <div class="bg-white bg-opacity-90 border-l-4 border-green-500 rounded-2xl p-4 shadow-sm">
-                <div class="text-sm text-gray-500">Connexions acceptées</div>
-                <div class="text-2xl font-extrabold text-gray-900 mt-1">340</div>
-                <div class="text-xs text-gray-500 mt-1">76.4%</div>
+            <div class="rounded-2xl p-4 bg-white bg-opacity-90 shadow-sm border border-white border-opacity-40">
+                <div class="flex items-start justify-between">
+                <div>
+                    <div class="text-sm text-gray-500">Connexions acceptées</div>
+                    <div class="text-2xl font-extrabold text-gray-900 mt-1">340</div>
+                    <div class="text-xs text-gray-500 mt-1">76.4%</div>
+                </div>
+                <span class="w-2.5 h-10 rounded-full bg-green-500"></span>
+                </div>
             </div>
 
             <!-- KPI 3 -->
-            <div class="bg-white bg-opacity-90 border-l-4 border-yellow-500 rounded-2xl p-4 shadow-sm">
-                <div class="text-sm text-gray-500">Réponses positives</div>
-                <div class="text-2xl font-extrabold text-gray-900 mt-1">165</div>
-                <div class="text-xs text-gray-500 mt-1">48.5%</div>
+            <div class="rounded-2xl p-4 bg-white bg-opacity-90 shadow-sm border border-white border-opacity-40">
+                <div class="flex items-start justify-between">
+                <div>
+                    <div class="text-sm text-gray-500">Réponses positives</div>
+                    <div class="text-2xl font-extrabold text-gray-900 mt-1">165</div>
+                    <div class="text-xs text-gray-500 mt-1">48.5%</div>
+                </div>
+                <span class="w-2.5 h-10 rounded-full bg-yellow-500"></span>
+                </div>
             </div>
             </div>
         </div>
