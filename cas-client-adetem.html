@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cas Client — ADETEM | AudienceFlow</title>
+  <meta name="description" content="D’une audience LinkedIn dormante à un flux régulier de conversations qualifiées pour générer des opportunités d’adhésion, sans prospection à froid." />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Cas Client — ADETEM" />
+  <meta property="og:description" content="Réactivation d’une audience LinkedIn pour générer des opportunités d’adhésion : ~100 prises de contact / semaine, +30% taux de réponse." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://ton-domaine/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Tailwind 2.x -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- Font Awesome 6.x -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    .gradient-card { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+    .gradient-process { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+    .gradient-step { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+    .shadow-custom { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-5px); }
+    :target { scroll-margin-top: 96px; }
+  </style>
+</head>
+
+<body class="bg-gray-50">
+  <!-- Skip link -->
+  <a href="#contenu" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-white text-gray-900 px-3 py-2 rounded">
+    Aller au contenu
+  </a>
+
+  <!-- HEADER -->
+  <header id="site-header" class="fixed top-0 inset-x-0 z-40 transition-all">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="h-16 flex items-center justify-between rounded-xl mt-3 px-4 bg-white bg-opacity-70 backdrop-filter backdrop-blur-lg shadow">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2" aria-label="Accueil">
+          <span class="w-8 h-8 rounded-lg gradient-bg block"></span>
+          <span class="font-semibold text-gray-900">AudienceFlow</span>
+        </a>
+
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="index.html#situation" class="text-gray-700 hover:text-gray-900">Situation</a>
+          <a href="index.html#process" class="text-gray-700 hover:text-gray-900">Process</a>
+          <a href="index.html#benefices" class="text-gray-700 hover:text-gray-900">Bénéfices</a>
+          <a href="cas-clients.html" class="text-gray-700 hover:text-gray-900">Cas Clients</a>
+          <a href="#contact" class="text-gray-700 hover:text-gray-900">Contact</a>
+          <a href="https://tidycal.com/mathieu-growth/autolinkedin" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 bg-gray-900 text-white px-4 py-2 rounded-lg shadow hover:opacity-90">
+            <i class="fa-regular fa-calendar"></i> 15 min
+          </a>
+        </nav>
+
+        <!-- Mobile menu button -->
+        <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <nav id="mobile-menu" class="md:hidden hidden mt-2 bg-white bg-opacity-90 backdrop-filter backdrop-blur-lg rounded-xl shadow px-4 py-3">
+        <a href="index.html#situation" class="block py-2 text-gray-800">Situation</a>
+        <a href="index.html#process" class="block py-2 text-gray-800">Process</a>
+        <a href="index.html#benefices" class="block py-2 text-gray-800">Bénéfices</a>
+        <a href="cas-clients.html" class="block py-2 text-gray-800">Cas Clients</a>
+        <a href="#contact" class="block py-2 text-gray-800">Contact</a>
+        <a href="https://tidycal.com/mathieu-growth/autolinkedin" target="_blank" rel="noopener"
+           class="mt-2 w-full text-center bg-gray-900 text-white px-4 py-2 rounded-lg">Prendre 15 min</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="contenu" class="gradient-bg pt-32 pb-14 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col lg:flex-row gap-10 items-start">
+
+        <!-- LEFT -->
+        <div class="w-full lg:w-7/12">
+          <a href="cas-clients.html" class="inline-flex items-center text-white text-opacity-90 hover:text-opacity-100 text-sm mb-4">
+            <i class="fa-solid fa-arrow-left mr-2"></i> Retour aux cas clients
+          </a>
+
+          <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight">
+            ADETEM
+          </h1>
+
+          <p class="mt-4 text-lg md:text-xl text-blue-100">
+            D’une audience LinkedIn dormante à un flux régulier de conversations qualifiées,<br/>
+            pour générer des opportunités d’adhésion (sans prospection à froid).
+          </p>
+
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-white bg-opacity-20 text-white">
+              <i class="fa-solid fa-users mr-2"></i> Réseau / Association
+            </span>
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-white bg-opacity-20 text-white">
+              <i class="fa-brands fa-linkedin mr-2"></i> Activation audience
+            </span>
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-white bg-opacity-20 text-white">
+              <i class="fa-solid fa-robot mr-2"></i> Automatisation
+            </span>
+          </div>
+
+          <p class="mt-5 text-xs text-white text-opacity-75">
+            Note : volumes et taux indiqués ci-dessous observés sur la période de campagne (valeurs indicatives). :contentReference[oaicite:1]{index=1}
+          </p>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="w-full lg:w-5/12">
+          <!-- KPI Card (Glass + KPI transparents) -->
+          <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl p-6 shadow-custom border border-white border-opacity-20">
+            <div class="flex items-center justify-between">
+              <div class="text-sm font-semibold text-white">Résultats (période de campagne)</div>
+              <div class="text-xs text-white text-opacity-80">Observés</div>
+            </div>
+
+            <div class="mt-5 grid grid-cols-1 gap-3">
+              <!-- KPI 1 -->
+              <div class="rounded-2xl p-4 bg-white bg-opacity-10 border border-white border-opacity-20">
+                <div class="flex items-start justify-between gap-4">
+                  <div>
+                    <div class="text-sm text-white text-opacity-80">Prises de contact</div>
+                    <div class="text-3xl font-extrabold text-white mt-1">≈ 100 / semaine</div>
+                    <div class="text-xs text-white text-opacity-70 mt-1">Rythme d’envoi maîtrisé</div>
+                  </div>
+                  <span class="w-2.5 h-10 rounded-full bg-indigo-300"></span>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3">
+                <!-- KPI 2 -->
+                <div class="rounded-2xl p-4 bg-white bg-opacity-10 border border-white border-opacity-20">
+                  <div class="flex items-start justify-between gap-3">
+                    <div>
+                      <div class="text-sm text-white text-opacity-80">Taux de réponse</div>
+                      <div class="text-2xl font-extrabold text-white mt-1">+30%</div>
+                      <div class="text-xs text-white text-opacity-70 mt-1">vs situation initiale</div>
+                    </div>
+                    <span class="w-2.5 h-10 rounded-full bg-green-300"></span>
+                  </div>
+                </div>
+
+                <!-- KPI 3 -->
+                <div class="rounded-2xl p-4 bg-white bg-opacity-10 border border-white border-opacity-20">
+                  <div class="flex items-start justify-between gap-3">
+                    <div>
+                      <div class="text-sm text-white text-opacity-80">Réponses positives</div>
+                      <div class="text-2xl font-extrabold text-white mt-1">+15%</div>
+                      <div class="text-xs text-white text-opacity-70 mt-1">vs situation initiale</div>
+                    </div>
+                    <span class="w-2.5 h-10 rounded-full bg-yellow-300"></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- KPI 4 (remplace "X adhérents") -->
+              <div class="rounded-2xl p-4 bg-white bg-opacity-10 border border-white border-opacity-20">
+                <div class="flex items-start justify-between gap-4">
+                  <div>
+                    <div class="text-sm text-white text-opacity-80">Impact additionnel</div>
+                    <div class="text-xl font-extrabold text-white mt-1">Pipeline & visibilité</div>
+                    <div class="text-xs text-white text-opacity-70 mt-1">Conversations au-delà de la campagne + image/visibilité renforcées</div>
+                  </div>
+                  <span class="w-2.5 h-10 rounded-full bg-pink-300"></span>
+                </div>
+              </div>
+            </div>
+
+            <a href="#contact"
+               class="mt-6 inline-flex w-full items-center justify-center bg-yellow-300 text-gray-900 font-semibold px-5 py-3 rounded-xl shadow hover:opacity-90 transition">
+              Voir comment l’appliquer chez vous
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTEXTE + OBJECTIF -->
+  <section class="py-16 px-4 bg-white">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+        <h2 class="text-3xl font-bold text-gray-900">Contexte</h2>
+        <p class="mt-4 text-gray-600">
+          L’ADETEM, premier réseau français de professionnels du marketing (1600+ membres, profils B2B, B2C et grands comptes),
+          souhaitait identifier de nouveaux leviers d’acquisition d’adhérents à partir de ses audiences existantes. :contentReference[oaicite:2]{index=2}
+        </p>
+
+        <div class="mt-8 bg-gray-50 border border-gray-100 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-gray-900">Objectif</h3>
+          <p class="mt-3 text-gray-700">
+            Réactiver une base “froide” issue de LinkedIn et la transformer en pipeline de conversations qualifiées,
+            sans prospection à froid ni investissements publicitaires supplémentaires. :contentReference[oaicite:3]{index=3}
+          </p>
+        </div>
+      </div>
+
+      <aside class="bg-white rounded-2xl p-6 shadow-custom border border-gray-100 h-fit">
+        <div class="text-sm font-semibold text-gray-900">Enjeu principal</div>
+        <ul class="mt-4 space-y-3 text-gray-700 text-sm">
+          <li class="flex items-start gap-3"><i class="fa-solid fa-bolt text-blue-500 mt-0.5"></i> Exploiter une audience sous-utilisée</li>
+          <li class="flex items-start gap-3"><i class="fa-solid fa-stopwatch text-purple-500 mt-0.5"></i> Gagner en réactivité commerciale</li>
+          <li class="flex items-start gap-3"><i class="fa-solid fa-handshake text-green-500 mt-0.5"></i> Générer des opportunités d’adhésion qualifiées</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- APPROCHE -->
+  <section class="py-16 px-4 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-gray-900 text-center">Approche</h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto mt-4 mb-12"></div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+        <!-- Pilier 1 -->
+        <div class="bg-white rounded-2xl p-8 shadow-custom card-hover border border-gray-100">
+          <div class="text-3xl text-blue-500 mb-4"><i class="fa-solid fa-filter"></i></div>
+          <h3 class="text-xl font-bold text-gray-900">Pilier 1 — Audience exploitable</h3>
+          <p class="mt-3 text-gray-600 text-sm">
+            Extraction d’une base d’audience pertinente mais historiquement inactive, à partir des 5000+ abonnés LinkedIn de la page ADETEM. :contentReference[oaicite:4]{index=4}
+          </p>
+          <ul class="mt-5 space-y-2 text-sm text-gray-700">
+            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Extraction de la base</li>
+            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Nettoyage & déduplication</li>
+          </ul>
+        </div>
+
+        <!-- Pilier 2 -->
+        <div class="bg-white rounded-2xl p-8 shadow-custom card-hover border border-gray-100">
+          <div class="text-3xl text-purple-500 mb-4"><i class="fa-solid fa-database"></i></div>
+          <h3 class="text-xl font-bold text-gray-900">Pilier 2 — Enrichissement & segmentation</h3>
+          <p class="mt-3 text-gray-600 text-sm">
+            Structuration de la donnée pour rendre le ciblage actionnable et reproductible. :contentReference[oaicite:5]{index=5}
+          </p>
+          <ul class="mt-5 space-y-2 text-sm text-gray-700">
+            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Enrichissement (rôle, entreprise, secteur)</li>
+            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Segmentation pour un ciblage exploitable</li>
+          </ul>
+        </div>
+
+        <!-- Pilier 3 -->
+        <div class="bg-white rounded-2xl p-8 shadow-custom card-hover border border-gray-100">
+          <div class="text-3xl text-green-500 mb-4"><i class="fa-solid fa-paper-plane"></i></div>
+          <h3 class="text-xl font-bold text-gray-900">Pilier 3 — Activation automatisée</h3>
+          <p class="mt-3 text-gray-600 text-sm">
+            Déploiement d’une séquence d’activation personnalisée : messages contextualisés, rythme maîtrisé, suivi et relances automatiques. :contentReference[oaicite:6]{index=6}
+          </p>
+          <ul class="mt-5 space-y-2 text-sm text-gray-700">
+            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Approche respectueuse & orientée valeur</li>
+            <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Pilotage & optimisation continue</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTATS + AVANT/APRES -->
+  <section class="py-16 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-gray-900 text-center">Résultats & impact</h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto mt-4 mb-12"></div>
+
+      <div class="grid lg:grid-cols-2 gap-8">
+        <!-- Résultats -->
+        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+          <h3 class="text-xl font-bold text-gray-900">Performance observée</h3>
+
+          <div class="mt-6 space-y-4">
+            <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+              <div class="flex items-center justify-between">
+                <div class="text-gray-700 font-medium">Prises de contact</div>
+                <div class="text-gray-900 font-extrabold text-xl">≈ 100 / semaine</div>
+              </div>
+              <div class="text-sm text-gray-500 mt-1">Volume indicatif</div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+              <div class="flex items-center justify-between">
+                <div class="text-gray-700 font-medium">Taux de réponse</div>
+                <div class="text-gray-900 font-extrabold text-xl">+30%</div>
+              </div>
+              <div class="text-sm text-gray-500 mt-1">Hausse observée sur la période</div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+              <div class="flex items-center justify-between">
+                <div class="text-gray-700 font-medium">Réponses positives</div>
+                <div class="text-gray-900 font-extrabold text-xl">+15%</div>
+              </div>
+              <div class="text-sm text-gray-500 mt-1">Intention / intérêt plus qualifiés</div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+              <div class="flex items-center justify-between">
+                <div class="text-gray-700 font-medium">Effet long terme</div>
+                <div class="text-gray-900 font-extrabold text-xl">Pipeline</div>
+              </div>
+              <div class="text-sm text-gray-500 mt-1">Conversations au-delà de la période d’accompagnement</div>
+            </div>
+          </div>
+
+          <p class="mt-6 text-gray-700">
+            Ces résultats ont permis de transformer une audience passive en canal d’acquisition activable et mesurable. :contentReference[oaicite:7]{index=7}
+          </p>
+
+          <p class="mt-3 text-sm text-gray-500">
+            À noter : le nombre exact de nouveaux adhérents attribuables n’a pas été consolidé à date ; l’impact a également été notable sur l’image et la visibilité.
+          </p>
+        </div>
+
+        <!-- Avant / Après -->
+        <div class="bg-white rounded-2xl p-8 shadow-custom border border-gray-100">
+          <h3 class="text-xl font-bold text-gray-900">Avant / Après</h3>
+
+          <div class="mt-6 overflow-x-auto">
+            <table class="min-w-full text-sm">
+              <thead>
+                <tr class="text-left text-gray-500">
+                  <th class="py-2 pr-4 font-semibold">Situation initiale</th>
+                  <th class="py-2 font-semibold">Situation après intervention</th>
+                </tr>
+              </thead>
+              <tbody class="text-gray-700">
+                <tr class="border-t border-gray-100">
+                  <td class="py-3 pr-4">Audience LinkedIn non exploitée</td>
+                  <td class="py-3">Audience segmentée, enrichie et activée</td>
+                </tr>
+                <tr class="border-t border-gray-100">
+                  <td class="py-3 pr-4">Peu de conversations entrantes</td>
+                  <td class="py-3">Volume régulier d’échanges qualifiés</td>
+                </tr>
+                <tr class="border-t border-gray-100">
+                  <td class="py-3 pr-4">Aucune mise à l’échelle possible</td>
+                  <td class="py-3">Process entièrement reproductible</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="mt-6 gradient-process rounded-2xl p-6 text-white">
+            <div class="font-semibold">Ce que ça change concrètement</div>
+            <p class="mt-2 text-sm opacity-95">
+              Un canal d’activation “always-on” : l’audience LinkedIn devient un levier de conversations qualifiées,
+              avec un process structuré et pilotable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROLE -->
+  <section class="py-16 px-4 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-gray-900 text-center">Rôle d’AudienceFlow (mon rôle)</h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto mt-4 mb-12"></div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover border-l-4 border-blue-500">
+          <div class="text-2xl text-blue-500 mb-3"><i class="fa-solid fa-compass"></i></div>
+          <div class="font-bold text-gray-900">Cadrage stratégique</div>
+          <div class="text-sm text-gray-600 mt-2">Objectifs, segments prioritaires, approche de messages.</div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover border-l-4 border-green-500">
+          <div class="text-2xl text-green-500 mb-3"><i class="fa-solid fa-database"></i></div>
+          <div class="font-bold text-gray-900">Data extraction & enrichment</div>
+          <div class="text-sm text-gray-600 mt-2">Collecte, nettoyage, enrichissement, segmentation.</div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover border-l-4 border-purple-500">
+          <div class="text-2xl text-purple-500 mb-3"><i class="fa-solid fa-pen-nib"></i></div>
+          <div class="font-bold text-gray-900">Design des messages</div>
+          <div class="text-sm text-gray-600 mt-2">Messages contextualisés, orientés valeur.</div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover border-l-4 border-yellow-500">
+          <div class="text-2xl text-yellow-500 mb-3"><i class="fa-solid fa-gears"></i></div>
+          <div class="font-bold text-gray-900">Orchestration & automatisation</div>
+          <div class="text-sm text-gray-600 mt-2">Déploiement technique + suivi des échanges.</div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-lg card-hover border-l-4 border-indigo-500">
+          <div class="text-2xl text-indigo-500 mb-3"><i class="fa-solid fa-chart-simple"></i></div>
+          <div class="font-bold text-gray-900">Pilotage & optimisation</div>
+          <div class="text-sm text-gray-600 mt-2">Itérations, monitoring, amélioration continue.</div>
+        </div>
+
+        <div class="gradient-step rounded-2xl p-6 shadow-lg card-hover text-white">
+          <div class="text-2xl mb-3"><i class="fa-solid fa-trophy"></i></div>
+          <div class="font-bold">Objectif final</div>
+          <div class="text-sm opacity-90 mt-2">Un flux régulier d’échanges qualifiés issus de votre audience.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEMOIGNAGE -->
+  <section class="py-16 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-gray-900 text-center">Témoignage (à valider)</h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto mt-4 mb-10"></div>
+
+      <div class="max-w-4xl mx-auto bg-gray-50 border border-gray-100 rounded-3xl p-8">
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-full gradient-bg flex-shrink-0"></div>
+          <div>
+            <p class="text-gray-800 text-lg leading-relaxed">
+              “Grâce à cette démarche, nous avons pu réactiver une audience dormante et générer rapidement de nouvelles opportunités d’adhésion.
+              La méthodologie était structurée, efficace et mesurable.”
+            </p>
+            <div class="mt-4 text-sm text-gray-600 font-semibold">
+              Claudie — Déléguée Générale Adjointe (Développement), ADETEM
+            </div>
+            <div class="mt-1 text-xs text-gray-500">
+              (Formulation à valider par l’ADETEM) :contentReference[oaicite:8]{index=8}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="gradient-bg py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+        Vous avez une audience LinkedIn à activer (sans prospection à froid) ?
+      </h2>
+      <p class="text-lg text-blue-100 mb-8">
+        On met en place un système “audience → conversations qualifiées”, puis on l’automatise.
+      </p>
+
+      <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-2xl p-8 max-w-2xl mx-auto">
+        <h3 class="text-2xl font-bold text-white mb-4">Audit express offert (15 min)</h3>
+        <p class="text-blue-100 mb-6">
+          On analyse votre audience et on vous propose un plan d’activation sur-mesure.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://tidycal.com/mathieu-growth/autolinkedin" target="_blank" rel="noopener"
+             class="inline-flex items-center justify-center bg-yellow-300 text-gray-900 font-semibold px-6 py-3 rounded-xl shadow">
+            Réserver 15 min
+          </a>
+          <a href="cas-clients.html" class="inline-flex items-center justify-center bg-white bg-opacity-20 text-white px-6 py-3 rounded-xl">
+            Voir les autres cas clients
+          </a>
+        </div>
+      </div>
+
+      <p class="mt-6 text-white text-opacity-80 text-sm">
+        Adapté aux organismes de formation, réseaux, associations et B2B.
+      </p>
+    </div>
+  </section>
+
+  <script>
+    // Menu mobile toggle
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn && btn.addEventListener('click', () => {
+      const isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', isHidden ? 'false' : 'true');
+    });
+
+    // Header style on scroll
+    const hdr = document.getElementById('site-header');
+    const onScroll = () => {
+      const y = window.scrollY || 0;
+      hdr.style.boxShadow = y > 8 ? '0 10px 30px rgba(0,0,0,.08)' : 'none';
+      hdr.style.background = y > 8 ? 'rgba(255,255,255,.6)' : 'transparent';
+      hdr.style.backdropFilter = y > 8 ? 'saturate(180%) blur(8px)' : 'none';
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  </script>
+</body>
+</html>
